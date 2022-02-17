@@ -2,9 +2,9 @@
 
 
 var play=[
-    "rock",
-    "paper",
-    "scissors"
+    "Rock",
+    "Paper",
+    "Scissors"
 ];
 
 var gen=Math.round(Math.random()*2);
@@ -17,7 +17,7 @@ function checker(){
 for(let i=0;i<play.length;i++){
     if (yourBet==play[i]){
        return output=
-            `Your play:${yourBet} My play:${play[gen]}`;
+            `Your play: ${yourBet} My play: ${play[gen]}`;
     
     }
 }return output="tik dit reg in";
