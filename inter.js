@@ -17,7 +17,7 @@ function checker(){
 for(let i=0;i<play.length;i++){
     if (yourBet==play[i]){
        return output=
-            `Your play: ${yourBet} My play: ${play[gen]}`;
+            `Your play: ${yourBet} \n My play: ${play[gen]}`;
     
     }
 }return output="tik dit reg in";
@@ -46,4 +46,5 @@ if(output==="tik dit reg in"){
 function returner(){
     document.getElementById("outputer").innerHTML=checker()
     document.getElementById("result").innerHTML=doener();
+    gen=Math.round(Math.random()*2);
 }
