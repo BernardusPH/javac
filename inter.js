@@ -33,12 +33,12 @@ function doener(){
 if(output==="tik dit reg in"){
      return  result="geen result nie";
 }else if(yourBet===play[gen]){
-     return  result="tied";
-}else if(yourBet==="paper" && play[gen]==="rock"){
+     return  result="Tied";
+}else if(yourBet==="Paper" && play[gen]==="Rock"){
      return  result="U win";
-}else if(yourBet==="rock" && play[gen]==="scissors"){
+}else if(yourBet==="Rock" && play[gen]==="Scissors"){
      return  result="U win";
-}else if(yourBet==="scissors" && play[gen]==="paper"){
+}else if(yourBet==="Scissors" && play[gen]==="Paper"){
      return  result="U win";
 }else{  return result="I win :P"}
 }
