@@ -1,84 +1,38 @@
-
-
-
-var play=[
-    "Rock",
-    "Paper",
-    "Scissors"
-];
-
-var gen=Math.round(Math.random()*2);
-var output="";
-var buttonlink = document.querySelector("button");
-var yourBet;
-
-function checker(){
- yourBet=document.getElementById("input").value;
-for(let i=0;i<play.length;i++){
-    if (yourBet==play[i]){
-       return output=
-       `Your play: ${yourBet} \n My play: ${play[gen]}`;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Tik Rock , Paper of Scissors (net so) in asb</h1>
+<h1>
+    <label for="input">
+        <input type="text" id="input" name="input">
+    </label>
     
-    }
-}return output="Tik dit reg in";
-}
+    <button onclick="returner()">Submit</button>
+</h1>
+        <h1>Output:</h1>
+    <h2 id="outputer"></h2>
+    </div>
+    <div style="margin-top:3rem;"><h2>Result:</h2>
+
+    <p id="result"></p>
+</div>
+
+<div><h2>Counter:</h2></div>
+<div>Computer score:</div>
+<p id="Compcounter"></p>
+<div>Your score:</div>
+<p id="Yourscore"></p>
 
 
 
 
-let result="";
-
-
-function doener(){
-     if(output==="Tik dit reg in"){
-          return  result="geen result nie";
-     }else if(yourBet===play[gen]){
-          return  result="Tied";
-     }else if(yourBet==="Paper" && play[gen]==="Rock"){
-          return  result="U win";
-     }else if(yourBet==="Rock" && play[gen]==="Scissors"){
-          return  result="U win";
-     }else if(yourBet==="Scissors" && play[gen]==="Paper"){
-          return  result="U win";
-     }else{  return result="I win :P"}
-     }
-
- let  compcounter=0;
- let yourcounter=0;
- function yourCounter(){
-      if(output==="Tik dit reg in"){
-          yourcounter+=0;
-      }else if(yourBet===play[gen]){
-           yourcounter+=0;
-      }else if(yourBet==="Paper"  && play[gen]==="Rock"){
-           yourcounter+=1;
-      }else if(yourBet==="Rock" && play[gen]==="Scissors"){
-           yourcounter+=1;
-      }else if(yourBet==="Scissors" && play[gen]==="Paper"){
-          yourcounter+=1;
-      }else{  return  yourcounter+=0;}
-      return yourcounter;
-      }
-
-
- function compCounter(){
-      if(output==="Tik dit reg in"){
-     }else if(yourBet===play[gen]){
-        compcounter+=0;
-    }else if(yourBet==="Paper"  && play[gen]==="Rock"){
-         compcounter+=0;
-     }else if(yourBet==="Rock" && play[gen]==="Scissors"){
-          compcounter+=0;
-     }else if(yourBet==="Scissors" && play[gen]==="Paper"){
-         compcounter+=0;
-     }else{  return  compcounter+=1;}
-      return compcounter;
-      }
-
-function returner(){
-     document.getElementById("outputer").innerHTML=checker()
-     document.getElementById("result").innerHTML=doener();
-     document.getElementById("Compcounter").innerHTML=compCounter();
-     document.getElementById("Yourscore").innerHTML= yourCounter();
-     gen=Math.round(Math.random()*2);
- }
+<script src="inter.js" type="text/javascript"></script>
+</body>
+</html>
